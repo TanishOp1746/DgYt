@@ -2,8 +2,6 @@ const express = require('express');
 const server = express();
 const mineflayer = require('mineflayer');
 
-const mySecret = process.env['Password']
-
 server.all(`/`, (req, res) => {
     res.send(`Please connect me to a hosting website in-order to work 24/7.`);
 });
@@ -26,7 +24,7 @@ function createBot() {
     });
 
     bot.on('spawn', () => {
-      bot.chat(process.env["Password"]);
+      bot.chat('/login 7974938782');
    setTimeout(() => {
      bot.chat('');
    }, 10000 );

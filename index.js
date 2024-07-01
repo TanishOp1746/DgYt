@@ -14,8 +14,8 @@ function keepAlive() {
 
 function createBot() {
     const bot = mineflayer.createBot({
-      host: 'Play.firemc.fun',
-      username: 'Yuji_Itadori',
+      host: 'Play.potionmc.xyz',
+      username: 'DgYtOnTop',
       password: 'haseeb',
     });
 
@@ -24,9 +24,9 @@ function createBot() {
     });
 
     bot.on('spawn', () => {
-      bot.chat('/login yourself');
+      bot.chat('/login 553532');
    setTimeout(() => {
-     bot.chat('/server LifeSteal');
+     bot.chat('/server survival');
    }, 10000 );
     });
 

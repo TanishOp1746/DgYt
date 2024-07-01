@@ -15,7 +15,7 @@ function keepAlive() {
 function createBot() {
     const bot = mineflayer.createBot({
       host: 'Play.firemc.fun',
-      username: 'DGYTONTOP',
+      username: 'Yuji_Itadori',
       password: 'haseeb',
     });
 
@@ -24,9 +24,9 @@ function createBot() {
     });
 
     bot.on('spawn', () => {
-      bot.chat('/login 7974938782');
+      bot.chat('/login yourself');
    setTimeout(() => {
-     bot.chat('');
+     bot.chat('/server LifeSteal');
    }, 10000 );
     });
 

@@ -29,7 +29,10 @@ function createBot() {
      bot.chat('/server survival');
    }, 10000 );
     });
-
+setInterval(() => {
+        bot.chat('/server Survival');
+      }, 300000); // 300000 milliseconds = 5 minutes
+    });
     bot.on('chat', (username, message) => {
       if (username !== bot.username) {
         bot.chat(``);

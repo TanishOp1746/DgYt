@@ -11,6 +11,7 @@ function keepAlive() {
         console.log(`24/7 Activation Complete`);
     });
 }
+let isConnected = false;
 
 function createBot() {
     const bot = mineflayer.createBot({
@@ -34,12 +35,15 @@ function createBot() {
         bot.chat('/server Survival');
     }, 120000); // 300000 milliseconds = 5 minutes
 
-    bot.on('chat', (username, message) => {
-        if (username !== bot.username) {
-            bot.chat('');
-            console.log(`${username} said "${message}"`);
+     // Check the bot's connection status every 30 minutes
+    setInterval(() => {
+        if (isConnected) {
+            console.log('Bot is connected.');
+        } else {
+            console.log('Bot is not connected.');
         }
-    });
+    }, 30 * 60 * 1000); // 30 minutes in milliseconds
+
 
     bot.on('end', () => {
         console.log('Bot disconnected');

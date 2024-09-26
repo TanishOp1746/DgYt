@@ -33,7 +33,7 @@ function createBot() {
 
     setInterval(() => {
         bot.chat('/server Survival');
-    }, 120000); // 300000 milliseconds = 5 minutes
+    }, 300000); // 300000 milliseconds = 5 minutes
 
      // Check the bot's connection status every 30 minutes
     setInterval(() => {

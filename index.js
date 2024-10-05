@@ -15,7 +15,7 @@ let isConnected = false;
 
 function createBot() {
     const bot = mineflayer.createBot({
-        host: 'Play.potionmc.xyz',
+        host: 'Potionmc.xyz',
         username: 'DgYtOnTop',
         password: 'haseeb',
     });
